@@ -1,13 +1,61 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Play', sans-serif;
+}
+
+.screen {
+  height: 4rem;
+  margin-bottom: 4rem;
+}
+
+.wrapper {
+  background: rgb(200, 137, 148);
+  width: 20rem;
+  padding: 1rem;
+  margin-top: 4rem;
+  box-shadow: 2px 0px 20px 4px rgba(0,0,0,0.4);
+}
+
+.btnBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+.button {
+  background: pink;
+  height: 3rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(61, 61, 61);
+  border:none;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  border: 1px solid rgb(61, 61, 61);
+}
+
+.equals {
+  background: rgba(233, 233, 115, 0.812);
+  grid-column: 3/5;
+}
+
+.opt {
+  background: rgba(227, 93, 93, 0.668);
 }
